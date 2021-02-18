@@ -1,0 +1,641 @@
+@import "_header.scss";
+@import "_footer.scss";
+
+@media only screen and (min-width: 200px) {
+*, html {
+  margin:0;
+  padding:0;
+  font-family: "Arial Black";
+  font-size: 15px;
+}
+    
+body {
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  }
+.no-gutters {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+/**QUIEN-SOY.HTML**/
+    
+.quienBox--model {
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+  background-image: url(../../img/L0x6r2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+  margin: 15px 0 5% 5%;  
+}
+    
+.quienbox__imagen--model {
+width:100%;
+margin-top: 10%;
+}
+    
+.quienbox__imagen--photo{
+width: 60%;
+border-radius: 20px;
+margin-left: 20%;
+    
+}
+    
+.quienBox__textContainer--size{
+  width:80%;
+  margin: 10%;
+}
+    
+.quienBox__text--style{
+  background-color:rgba(49, 49, 49, 0.8);
+  color:yellow;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+  
+.quienBox__map--size {
+  width: 80%;
+  margin: 0 0 10% 10%;
+}
+
+iframe {
+  width: 100%;
+}
+    
+/****/
+    
+    
+/**CONTACTO.HTML**/
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#fondoContacto {
+  margin-left: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-image: url(../../img/L0x6r2.jpg);
+  border-radius: 20px;
+  width: 80%;
+  height: 540px;
+  margin-bottom: 30px;
+}
+.containerContacto {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: rgba(49, 49, 49, 0.8);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#botonContacto {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#contact button[type="submit"] {
+	letter-spacing: 0.4em;
+	font-size: 20px;
+	text-align: center;
+	color: yellow;
+  cursor: pointer;
+  border:none;
+  background: none;
+  max-width: 150px; 
+  width: 100%; 
+  outline: 3px solid;
+  outline-color: rgba(255, 255, 0, 0.8);
+  outline-offset: 10px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+  margin: 15px 0 0 0;
+}
+
+#contact button[type="submit"]:hover {
+	color: yellow;
+  outline-color: rgba(71, 126, 232, 0);
+  outline-offset: 20px;
+  letter-spacing: 0.35rem;
+}
+
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+/****/
+    
+/**TARIFA.HTML**/
+    
+    
+#fondoTarifa {
+  display:grid;
+  background-image: url(../../img/L0x6r2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top:15px;
+  width: 70vw;
+  border-radius:20px;
+  margin-left: 13%;
+}
+  
+#caja1 ul li {
+ padding-top: 10px;
+ margin-top: 5px;
+}
+.cajas {
+  background-color: rgba(49, 49, 49, 0.8);
+  width: 50vw;
+  margin-left:14%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+    
+.tarifaContenido ul li{
+  color:yellow;
+  list-style: none;
+  padding: 5px;
+  margin-left:50px;
+  list-style-image: url('../../img/pesa.png');
+}
+    
+.mesTarifa{
+  text-align: center;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  color:yellow;
+}
+p {
+  margin:5px 0 5px 0;
+}
+
+.btn {
+  color: #fff;
+  cursor: pointer;
+  // display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; 
+}
+.btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, .5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+} 
+
+.btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+/**
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  color: yellow;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color:yellow;
+  outline: 0;
+}
+
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px rgba(49, 49, 49, 0.8) inset;
+}
+**/
+
+#botonTarifa{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 15px 0;
+}
+
+/****/
+/** INDEX.HTML**/  
+.caja {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+ }
+.caja:hover{
+  -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+    
+.colorAmarillo{
+  text-decoration: none;
+  color:yellow;
+    }
+a:hover{
+   color:yellow;
+   text-decoration:none;
+}
+.botonInicio {
+  padding:10px 15px 10px 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius:20px;
+}
+
+@for $i from 1 through 5 {
+  #fondo#{$i} {
+    background-image: url(../../img/inicio/#{$i}.jpg);
+  }
+}
+
+    
+/**ENTRENAMIENTOS.HTML**/
+.size {
+  width:90%;
+  margin: 15px 0 0 5%;
+  background-image:url(../../img/L0x6r2.jpg);
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+}
+.galeria {
+  width: 90%;
+  margin:0 0 0 5%;
+  padding: 5% 0 5% 0;
+}
+
+.textoSize {
+  width: 90%;
+  margin: 10px 0 0 5%;
+}
+
+.textoEntrenamiento {
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  background-color:  rgba(49, 49, 49, 0.8);
+  padding: 10px;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+}
+    
+@media only screen and (min-width: 576px) {
+.caja{
+  height: 50vh;
+  width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+/**QUIEN-SOY.HTML**/
+    
+.quienBox--model {
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 70%; 
+  grid-template-areas:
+  "imagen texto"
+  "mapa mapa";
+  width: 90%;
+  height: 100%;
+  margin: 15px 0 3% 5%;
+  padding: 0 3% 0 0;
+  background-color: white;
+  border-radius: 20px;
+}
+  
+section#imagen{
+  grid-area: imagen;
+}
+    
+section#texto{
+  grid-area: texto;
+}
+    
+section#mapa{
+  grid-area: mapa;
+}
+
+.quienbox__imagen--model{
+  margin-top: 15px;
+}
+
+.quienBox__textContainer--size{
+  width: 100%;
+  margin: 15px 5% 15px 0;
+}
+
+.quienbox__imagen--photo {
+  width: 80%;
+  margin-left: 5%;
+}
+  
+#mapa{
+  margin-top: 30px;
+}
+/****/
+    
+    
+/**CONTACTO.HTML**/
+#fondoContacto {
+  margin-left: 20%;
+  width: 60%;
+}
+/****/
+    
+/**TARIFA.HTML**/
+  
+
+#fondoTarifa {
+  display:grid;
+  grid-template-columns:30vw 30vw 30vw;
+  grid-template-rows: 45vh; 
+  grid-template-areas:
+  "caja1 caja2 caja3"
+  "caja4 caja4 caja4";
+  width: 95vw;
+  margin: 15px 3% 30px 3%;
+
+}
+
+@for $i from 1 through 5 {
+  section#caja#{$i} {
+    grid-area: caja#{$i};
+  }
+}
+
+#caja1 ul li {
+ padding-top: 10px;
+ margin-top: 5px;
+}
+.cajas {
+  background-color: rgba(49, 49, 49, 0.8);
+  width: 90%;
+  border-radius: 10px;
+  border-style: solid;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+    
+    
+#botonTarifa{
+  margin-left: 5.5%;
+}
+/****/ 
+
+/**ENTRENAMIENTOS**/
+.size {
+  width: 70%;
+  margin: 30px 0 0 15%;
+}
+.galeria {
+  width: 80%;
+  margin: 0 0 0 10%;
+  padding-top: 15px;
+}
+/**FOOTER**/
+
+}
+
+@media only screen and (min-width: 1024px) {
+  
+/**QUIEN-SOY.HTML**/
+.quienBox--model {
+  display:grid;
+  grid-template-columns:33% 33% 33%;
+  grid-template-rows: 60%; 
+  grid-template-areas:
+  "imagen texto texto"
+  "mapa mapa mapa";
+  width: 90%;
+  margin: 15px 0 0 5%;
+  padding: 0 3% 0 0;
+  background-color: white;
+  border-radius: 20px;
+}
+  
+section#imagen{
+  grid-area: imagen;
+}
+    
+section#texto{
+  grid-area: texto;
+}
+    
+section#mapa{
+  grid-area: mapa;
+}
+
+.quienbox__imagen--model{
+  margin-top: 15px;
+}
+.quienbox__imagen--photo{
+  width: 80%;
+  margin-left:10%;
+}
+.quienBox__textContainer--size{
+  width: 100%;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+#mapa {
+  margin-top:15px;
+}
+  
+/****/
+  
+  
+/**CONTACTO.HTML**/
+#fondoContacto {
+  margin-left: 30%;
+  width: 40%;
+}
+  
+/****/
+  
+/**TARIFA.HTML**/
+  
+/****/
+
+/**ENTRENAMIENTOS**/
+.size {
+  width: 80%;
+  margin: 30px 0 0 10%;
+  display: flex;
+  flex-direction: row;
+
+}
+.galeria {
+  width: 50%;
+  margin: 0 5% 0 2.5%;
+}
+
+.textoSize {
+  width: 50%;
+  margin: 5% 2.5% 0 5%;
+}
+
+
+
+
+}
+  
