@@ -286,14 +286,14 @@
     background-color: rgba(229, 255, 0, 0.4); }
   .active:hover, .accordion:hover {
     background-color: rgba(229, 255, 0, 0.5); }
+  .active:after {
+    content: "\2212"; }
   .accordion:after {
     content: '\002B';
     color: rgba(49, 49, 49, 0.8);
     font-weight: bold;
     float: right;
     margin-left: 5px; }
-  .active:after {
-    content: "\2212"; }
   .panel {
     padding: 0 18px;
     background-color: rgba(49, 49, 49, 0.8);
