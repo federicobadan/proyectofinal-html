@@ -9,6 +9,8 @@
     position: sticky;
     top: 0;
     z-index: 1020; }
+  .navbar {
+    padding: 0; }
   nav {
     text-align: center; }
   ul li a {
@@ -21,12 +23,10 @@
     color: rgba(255, 255, 0, 0.5) !important; } }
 
 @media only screen and (min-width: 992px) {
-  nav {
-    padding: .5rem 1rem; }
   .barra__item--margintop {
-    margin: 15px 0 0 0; }
+    margin: 15px 25px 0 25px; }
   .barra__item--margin {
-    margin: 15px 0 0 50px; } }
+    margin: 15px 25px 0 25px; } }
 
 .footer__h6--color {
   color: yellow !important;
@@ -179,7 +179,6 @@
     background-image: url(../../img/L0x6r2.jpg);
     border-radius: 20px;
     width: 80%;
-    height: 540px;
     margin-bottom: 30px; }
   .containerContacto {
     max-width: 400px;
@@ -271,6 +270,38 @@
     color: #888; }
   :-ms-input-placeholder {
     color: #888; }
+  .accordion {
+    background-color: rgba(49, 49, 49, 0.8);
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 10px 0 0 5%;
+    text-align: center; }
+  .active {
+    background-color: rgba(229, 255, 0, 0.4); }
+  .active:hover, .accordion:hover {
+    background-color: rgba(229, 255, 0, 0.5); }
+  .accordion:after {
+    content: '\002B';
+    color: rgba(49, 49, 49, 0.8);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px; }
+  .active:after {
+    content: "\2212"; }
+  .panel {
+    padding: 0 18px;
+    background-color: rgba(49, 49, 49, 0.8);
+    max-height: 0;
+    width: 90%;
+    margin: 0 0 0 5%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; }
   /****/
   /**TARIFA.HTML**/
   #fondoTarifa {
@@ -337,48 +368,6 @@
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388; }
-  /**
-.btn {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid yellow;
-  border-radius: 0.6em;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  color: yellow;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-.btn:hover, .btn:focus {
-  color:yellow;
-  outline: 0;
-}
-
-.first {
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.first:hover {
-  box-shadow: 0 0 40px 40px rgba(49, 49, 49, 0.8) inset;
-}
-**/
   #botonTarifa {
     display: flex;
     flex-direction: row;

@@ -15,7 +15,9 @@
     top: 0;
     z-index: 1020;
   }
-
+  .navbar{
+    padding:0;
+  }
   nav{
     text-align:center;
   }
@@ -45,16 +47,12 @@
 
 @media only screen and (min-width: 992px) {
 
-  nav{
-    padding: .5rem 1rem;
-  }
-
   .barra__item--margintop {
-    margin: 15px 0 0 0;
+    margin: 15px 25px 0 25px;
   }
 
   .barra__item--margin{
-    margin: 15px 0 0 50px;
+    margin: 15px 25px 0 25px;
 }
 
 
