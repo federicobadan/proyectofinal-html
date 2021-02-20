@@ -1,6 +1,6 @@
 @import "_header.scss";
 @import "_footer.scss";
-
+@import "../css/bootstrap.min.css";
 @media only screen and (min-width: 200px) {
 *, html {
   margin:0;
@@ -246,20 +246,20 @@ fieldset {
   margin: 10px 0 0 5%;
   text-align: center;
 }
-
-.active {
+.activo {
+  @extend .active;
   background-color: rgba(229, 255, 0, 0.4);
 }
-.active:hover, .accordion:hover {
+
+.activo:hover, .accordion:hover {
   background-color: rgba(229, 255, 0, 0.5);
 }
-.active:after {
+.activo:after {
   content: "\2212";
 }
 
 .accordion:after {
   content: '\002B';
-  color: rgba(49, 49, 49, 0.8);
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -400,6 +400,14 @@ p {
   text-decoration: none;
   color:yellow;
     }
+.text-shadow {
+  text-shadow:
+   0 0 1px #000,
+   -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+   1px 1px 0 #000;
+  }
 a:hover{
    color:yellow;
    text-decoration:none;

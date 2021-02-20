@@ -1,3 +1,4 @@
+@import url(../css/bootstrap.min.css);
 @media only screen and (min-width: 200px) {
   .barra--background {
     background-color: rgba(0, 0, 0, 0.9) !important; }
@@ -5,6 +6,8 @@
     margin-left: 5%; }
   .barra__item--margintop {
     margin-top: 10px; }
+  .barra__button {
+    margin: 0 5% 0 0; }
   .sticky {
     position: sticky;
     top: 0;
@@ -17,7 +20,7 @@
     color: yellow !important; }
   .nav-link:focus, .nav-link:hover {
     text-decoration: underline; }
-  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .activo > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.activo, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
     color: yellow !important; }
   .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 0, 0.5) !important; } }
@@ -282,15 +285,14 @@
     transition: 0.4s;
     margin: 10px 0 0 5%;
     text-align: center; }
-  .active {
+  .activo {
     background-color: rgba(229, 255, 0, 0.4); }
-  .active:hover, .accordion:hover {
+  .activo:hover, .accordion:hover {
     background-color: rgba(229, 255, 0, 0.5); }
-  .active:after {
+  .activo:after {
     content: "\2212"; }
   .accordion:after {
     content: '\002B';
-    color: rgba(49, 49, 49, 0.8);
     font-weight: bold;
     float: right;
     margin-left: 5px; }
@@ -395,6 +397,8 @@
   .colorAmarillo {
     text-decoration: none;
     color: yellow; }
+  .text-shadow {
+    text-shadow: 0 0 1px #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   a:hover {
     color: yellow;
     text-decoration: none; }
