@@ -3,7 +3,7 @@
   .barra--background {
     background-color: rgba(0, 0, 0, 0.9) !important; }
   .barra__logo--margin {
-    margin-left: 5%; }
+    margin: 10px 0 0 5%; }
   .barra__item--margintop {
     margin-top: 10px; }
   .barra__button {
