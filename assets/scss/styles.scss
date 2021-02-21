@@ -248,11 +248,11 @@ fieldset {
 }
 .activo {
   @extend .active;
-  background-color: rgba(229, 255, 0, 0.4);
+  background-color: rgba(51,56,60, 0.4);
 }
 
 .activo:hover, .accordion:hover {
-  background-color: rgba(229, 255, 0, 0.5);
+  background-color: rgba(51,56,60, 0.5);
 }
 .activo:after {
   content: "\2212";
