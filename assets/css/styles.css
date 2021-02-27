@@ -1,9 +1,9 @@
 @import url(../css/bootstrap.min.css);
 @media only screen and (min-width: 200px) {
   .barra--background {
-    background-color: rgba(0, 0, 0, 0.9) !important; }
+    background-color: black !important; }
   .barra__logo--margin {
-    margin: 10px 0 0 5%; }
+    margin: 10px 0 10px 5%; }
   .barra__item--margintop {
     margin-top: 10px; }
   .barra__button {
@@ -24,10 +24,10 @@
     color: yellow !important; }
   .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 0, 0.5) !important; }
+  .nav-item {
+    box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.9); }
   .nav-item:hover {
-    background-color: rgba(51, 56, 60, 0.4);
-    border: solid;
-    border-color: black; } }
+    background-color: rgba(51, 56, 60, 0.4); } }
 
 @media only screen and (min-width: 992px) {
   .barra__item--margintop {
@@ -65,7 +65,7 @@
   height: 65px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #91C9FF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   outline: none;
   transition: 1s ease-in-out;
   border-radius: 30px; }
@@ -136,6 +136,11 @@ svg {
     text-shadow: 0 0 1px #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   ol, ul {
     padding: 0; }
+  .non-selectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
   body {
     background-color: black;
     background-attachment: fixed;
@@ -369,7 +374,6 @@ svg {
   p {
     margin: 5px 0 5px 0; }
   .btn {
-    color: #fff;
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
@@ -380,20 +384,12 @@ svg {
     text-decoration: none;
     text-transform: uppercase;
     width: 100%; }
-  .btn-5 {
-    border: 0 solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
-    outline-color: rgba(255, 255, 255, 0.5);
-    outline-offset: 0px;
-    text-shadow: none;
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
   .btn-5:hover {
     border: 1px solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388; }
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); }
   #botonTarifa {
     display: flex;
     flex-direction: row;
