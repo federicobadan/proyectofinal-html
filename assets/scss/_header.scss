@@ -44,7 +44,11 @@
     .navbar-dark .navbar-nav .nav-link {
         color: rgba(255, 255, 0, 0.5) !important;
     }
-
+    .nav-item:hover {
+      background-color:rgba(51, 56, 60, 0.4);
+      border:solid;
+      border-color:black;
+    }
     
 
 }
