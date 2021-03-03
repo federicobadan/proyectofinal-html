@@ -248,6 +248,19 @@ fieldset {
   color: #888;
 }
 
+.activo {
+  @extend .active;
+  background-color: rgba(51,56,60, 0.4);
+}
+
+.activo:hover, .accordion:hover {
+  background-color: rgba(51,56,60, 0.5);
+}
+.activo:after {
+  content: "\2212";
+  color:yellow;
+}
+
 .accordion {
   background-color: rgba(49, 49, 49, 0.8);
   cursor: pointer;
@@ -260,18 +273,6 @@ fieldset {
   transition: 0.4s;
   margin: 10px 0 0 5%;
   text-align: center;
-}
-.activo {
-  @extend .active;
-  background-color: rgba(51,56,60, 0.4);
-}
-
-.activo:hover, .accordion:hover {
-  background-color: rgba(51,56,60, 0.5);
-}
-.activo:after {
-  content: "\2212";
-  color:yellow;
 }
 
 .accordion:after {
@@ -295,6 +296,9 @@ fieldset {
   padding-left: 15px;
 }
 
+.underline-yellow {
+  text-decoration: underline yellow;
+}
 
 
 
@@ -406,7 +410,7 @@ p {
 .colorAmarillo{
   text-decoration: none;
   color:yellow;
-    }
+}
 
 a:hover{
    color:yellow;
@@ -504,12 +508,17 @@ section#mapa{
 }
 
 .quienbox__imagen--photo {
+  min-width: 300px;
   width: 80%;
   margin-left: 5%;
 }
   
 #mapa{
   margin-top: 30px;
+}
+.quienBox__map--size {
+  width: 97.5%;
+  margin: 0 0 10% 2.5%;
 }
 /****/
     
@@ -578,11 +587,11 @@ section#mapa{
 /**QUIEN-SOY.HTML**/
 .quienBox--model {
   display:grid;
-  grid-template-columns:33% 33% 33%;
-  grid-template-rows: 60%; 
+  grid-template-columns:40% 30% 30%;
+  grid-template-rows: 50%; 
   grid-template-areas:
   "imagen texto texto"
-  "mapa mapa mapa";
+  "imagen mapa mapa";
   width: 90%;
   margin: 15px 0 0 5%;
   padding: 0 3% 0 0;
@@ -607,7 +616,7 @@ section#mapa{
 }
 .quienbox__imagen--photo{
   width: 80%;
-  margin-left:10%;
+  margin: 0 0 10% 10%;
 }
 .quienBox__textContainer--size{
   width: 100%;
@@ -616,6 +625,10 @@ section#mapa{
 }
 #mapa {
   margin-top:15px;
+}
+.quienBox__map--size {
+  width: 100%;
+  margin: 0 0 10% 0;
 }
   
 /****/
@@ -630,7 +643,6 @@ section#mapa{
 /****/
   
 /**TARIFA.HTML**/
-  
 /****/
 
 /**ENTRENAMIENTOS**/
@@ -643,12 +655,15 @@ section#mapa{
 }
 .galeria {
   width: 50%;
-  margin: 0 5% 0 2.5%;
+  margin: 2.5% 2.5% 0 2.5%;
 }
 
 .textoSize {
   width: 50%;
   margin: 5% 2.5% 0 5%;
+}
+.tamaño {
+  min-width: 420px;
 }
 
 
