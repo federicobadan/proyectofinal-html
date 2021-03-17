@@ -433,7 +433,10 @@ svg {
     border: none;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
-    outline: none; }
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+    height: 50px; }
   #fondo1 {
     background-image: url(../../img/inicio/1.jpg); }
   #fondo2 {
