@@ -430,7 +430,8 @@ svg {
     text-transform: uppercase;
     padding: 10px 15px 10px 15px;
     text-align: center;
-    border: none !important;
+    border-style: none;
+    border-color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px; }
   #fondo1 {
