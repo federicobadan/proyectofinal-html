@@ -415,8 +415,7 @@ a:hover{
 .botonInicio {
   padding:10px 15px 10px 15px;
   text-align: center;
-  border: none;
-  background: none;
+  border: none !important;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius:20px;
 }
