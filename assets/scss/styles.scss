@@ -413,6 +413,11 @@ a:hover{
    text-decoration:none !important;
 }
 .botonInicio {
+  cursor: pointer;
+  // display: block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
   padding:10px 15px 10px 15px;
   text-align: center;
   border: none !important;

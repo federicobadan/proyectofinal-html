@@ -424,6 +424,10 @@ svg {
     color: yellow;
     text-decoration: none !important; }
   .botonInicio {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
     padding: 10px 15px 10px 15px;
     text-align: center;
     border: none !important;
